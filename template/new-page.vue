@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: {{ filename }}
+  name: '{{ filename }}'
 }
 </script>
 
