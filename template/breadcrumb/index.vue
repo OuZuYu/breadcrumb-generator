@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isBreadcrumbShow">
+  <div class="bcg-breadcrumb" v-if="isBreadcrumbShow">
     <el-breadcrumb separator="/">
       <el-breadcrumb-item
         v-for="(item, index) in breadcrumbData"
@@ -34,5 +34,13 @@ export default {
 </script>
 
 <style lang="less">
-
+.bcg-breadcrumb {
+  .el-breadcrumb {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    padding-left: 20px;
+    background: #fff;
+  }
+}
 </style>
