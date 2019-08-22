@@ -21,7 +21,7 @@ export default ({ app, store }) => {
 
     const breadcrumbData = path2Arr(matchPath)
       .map(path => {
-        path = path.replace(/^:(.+)\?$/, (match, $1)=> {
+        path = path.replace(/^:([^:?]+)(\?)?$/, (match, $1)=> {
           return `_${$1}`
         })
         return '/' + path
